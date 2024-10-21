@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Produto.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Edição do Produto</h1>
+        </header>
+        <nav>
+            <a href="cadastro.html">Cadastrar Produto</a> 
+            <a href="Deletar.html">Deletar Produto</a> 
+            <a href="Editar.html">Editar Produto</a>
+            <a href="Consultar.html">Consultar Produto</a>
+            <a href="index.html">Consultar Produto</a>
+        </nav>
+        
+        <main>
+            <article>
+                <form action="Editar.jsp" method="POST">
+                
+                    <p><label for="nome">Nome:</label><input type="text" required name="nome" id="nome"></p>
+                    <p><label for="telefone">Telefone:</label> <input type="text" pattern="^([(][0-9]{2}[)])([0-9]{5}[-])([0-9]{4})$" required name="telefone" placeholder="(xx)xxxxx-xxxx" id="telefone"></p>
+                    
+                    <p><label for="email">E-mail:</label><input type="text" required pattern="^([^@]+@)([^@]+)([.][^@]+)$" name="email" placeholder="example@gmail.com" id="email"></p>
+                    
+                    <p><label for="cep">CEP:</label><input type="text" required pattern="^[0-9]{5}-[0-9]{3}$" name="cep" placeholder="xxxxx-xxx" id="cep"></p>
+                    
+                    <p><label for="estado">Estado:</label>     <input type="text" required name="estado" id="estado"></p>
+                    <p><label for="cidade">Cidade:</label>     <input type="text" required name="cidade" id="cidade"></p>
+                    <p><label for="bairro">Bairro:</label>     <input type="text" required name="bairro" id="bairro"></p>
+                    <p><label for="rua">Rua:</label>     <input type="text" required name="rua" id="rua"></p>
+                    <p><label for="numero">Numero:</label>     <input type="text" required name="numero" id="numero"></p>
+                    <p><label for="complemento">Complemento:</label>     <input type="text" name="complemento" id="complemento" value="Vazio"></p>
+                    <p>
+                        <input type="submit" value="Editar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </form>
+            </article>
+        </main>
+
+        <footer>
+            <p>Site produzido pelos alunos do IF da turma CTII248. Eduardo Rodrigues, Talita Gomes e Matheus Santana</p>
+        </footer>
+    </body>
+</html>
